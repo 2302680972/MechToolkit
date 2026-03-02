@@ -1,0 +1,45 @@
+name: Release VSIX
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Parse version
+        id: info
+        run: |
+          tag="${{ github.ref_name }}"
+          version=$(echo "$tag" | sed 's/^v//')
+          echo "VERSION=$version" >> $GITHUB_OUTPUT
+
+      - name: Check files
+        run: |
+          version="${{ steps.info.outputs.VERSION }}"
+          test -f "releases/v$version/toolkit-bescript-suite-$version.vsix"
+          test -f "releases/v$version/win-x64/toolkit-bescript-suite-$version-win-x64.vsix"
+          test -f "releases/v$version/linux-x64/toolkit-bescript-suite-$version-linux-x64.vsix"
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Toolkit BEScript Suite v${{ steps.info.outputs.VERSION }}
+          tag_name: ${{ github.ref_name }}
+          files: |
+            releases/v${{ steps.info.outputs.VERSION }}/toolkit-bescript-suite-${{ steps.info.outputs.VERSION }}.vsix
+            releases/v${{ steps.info.outputs.VERSION }}/win-x64/toolkit-bescript-suite-${{ steps.info.outputs.VERSION }}-win-x64.vsix
+            releases/v${{ steps.info.outputs.VERSION }}/linux-x64/toolkit-bescript-suite-${{ steps.info.outputs.VERSION }}-linux-x64.vsix
+          body: |
+            用于对CreateAI平台游戏开发，提供便于AI理解的视图生成能力和语法检查能力。
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

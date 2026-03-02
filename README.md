@@ -1,6 +1,6 @@
 # Toolkit BeScript 插件
 
-VSCode 插件，用于 BeScript/Canvas/零件开发。
+用于对CreateAI平台游戏开发，提供便于AI理解的视图生成能力和语法检查能力。
 
 ## 下载
 
@@ -20,4 +20,4 @@ code --install-extension toolkit-bescript-suite-<版本>.vsix
 
 ## 当前版本
 
-v0.0.30
+v0.0.31
