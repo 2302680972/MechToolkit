@@ -1,6 +1,7 @@
 # Toolkit BeScript 插件
 
 用于对CreateAI平台游戏开发，提供便于AI理解的视图生成能力和语法检查能力。
+插件需要手动在VSCode上以VSIX形式安装
 
 ## 下载
 
@@ -17,7 +18,3 @@
 ```bash
 code --install-extension toolkit-bescript-suite-<版本>.vsix
 ```
-
-## 当前版本
-
-v0.0.31
