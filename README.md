@@ -5,10 +5,10 @@
 
 ## 相关链接
 
-CreateAI平台(Machinist) Steam链接 https://store.steampowered.com/app/1265510/Machinist/
-Toolkit仓库 https://github.com/2302680972/MechToolkit
-Skills仓库 https://github.com/2302680972/MachinistDev
-Toolkit使用教程 https://sx16dhdgjdw.feishu.cn/wiki/AdLGwxUuViJ3zpkt9CPcWhPznGf
+- CreateAI平台(Machinist) Steam链接 https://store.steampowered.com/app/1265510/Machinist/
+- Toolkit仓库 https://github.com/2302680972/MechToolkit
+- Skills仓库 https://github.com/2302680972/MachinistDev
+- Toolkit使用教程 https://sx16dhdgjdw.feishu.cn/wiki/AdLGwxUuViJ3zpkt9CPcWhPznGf
 
 ## 插件功能
 
