@@ -40,6 +40,6 @@ jobs:
             releases/v${{ steps.info.outputs.VERSION }}/toolkit-bescript-suite-${{ steps.info.outputs.VERSION }}-win-x64.vsix
             releases/v${{ steps.info.outputs.VERSION }}/toolkit-bescript-suite-${{ steps.info.outputs.VERSION }}-linux-x64.vsix
           body: |
-            用于对CreateAI平台游戏开发，提供便于AI理解的视图生成能力和语法检查能力。
+            用于对CreatAI平台游戏开发，提供便于AI理解的视图生成能力和语法检查能力。
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

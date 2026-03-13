@@ -1,11 +1,11 @@
 # Toolkit BeScript 插件
 
-用于对CreateAI平台游戏开发，提供便于AI理解的视图生成能力和语法检查能力。
+用于对CreatAI平台游戏开发，提供便于AI理解的视图生成能力和语法检查能力。
 插件需要手动在VSCode上以VSIX形式安装
 
 ## 相关链接
 
-- CreateAI平台(Machinist) Steam链接 https://store.steampowered.com/app/1265510/Machinist/
+- CreatAI平台(Machinist) Steam链接 https://store.steampowered.com/app/1265510/Machinist/
 - Toolkit仓库 https://github.com/2302680972/MechToolkit
 - Skills仓库 https://github.com/2302680972/MachinistDev
 - Toolkit使用教程 https://sx16dhdgjdw.feishu.cn/wiki/AdLGwxUuViJ3zpkt9CPcWhPznGf
